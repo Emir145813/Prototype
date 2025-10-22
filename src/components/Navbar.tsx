@@ -3,11 +3,12 @@ import { ModeToggle } from './ModeToggle'
 import SearchBar from './ui/SearchBar'
 import NavBarUnextended from './NavBar/NavBarUnextended'
 import NavBarExtended from './NavBar/NavBarExtended'
+import Container from './container'
 
 function Navbar() {
   return (
-    <>
-      <div className="navbar bg-base-100 shadow-sm">
+    <div className='bg-base-100'>
+      <div className="navbar shadow-sm w-[80%] mx-auto">
         <div className="navbar-start">
           <div className='flex items-center'>
             <NavBarUnextended/>
@@ -22,7 +23,7 @@ function Navbar() {
           <ModeToggle/>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
