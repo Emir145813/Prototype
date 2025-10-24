@@ -34,11 +34,11 @@ function Services() {
 
   return (
     <div className="bg-base-100">
-      <SegHeader/>
+      <SegHeader title="Services"/>
       <Container>
-        <div className="flex items-center justify-between py-20">
+        <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center justify-between py-20">
           {services.map((item)=>(
-            <div key={item.id} className="w-1/6">
+            <div key={item.id} className="">
               <span>
                 {item.logo}
               </span>
@@ -47,7 +47,7 @@ function Services() {
                   {item.title}
                 </h1>
               </div>
-              <p className="font-medium">
+              <p className="font-medium text-white/80">
                 {item.description}
               </p>
           </div>
