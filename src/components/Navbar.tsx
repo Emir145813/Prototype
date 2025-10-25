@@ -7,7 +7,7 @@ import Container from './container'
 
 function Navbar() {
   return (
-    <div className='bg-base-100'>
+    <div className='bg-base-100 py-5'>
       <div className="navbar shadow-sm w-[80%] mx-auto">
         <div className="navbar-start">
           <div className='flex items-center'>
